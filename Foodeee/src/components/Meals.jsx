@@ -29,7 +29,8 @@ export default function Meals(){
     return (
         // <ul id="meals">{mealsState.map(meals=><li key={meals.id}>{meals.name}</li>)}</ul>
         <ul id="meals">{mealsState.map((meal)=>{
-            <MealItem key={meal.id} meal={meal} />
-        })}</ul>
+            return <MealItem key={meal.id} meal={meal} />
+        })}
+        </ul>
     )
 }
