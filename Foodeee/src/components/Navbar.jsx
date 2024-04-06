@@ -1,4 +1,5 @@
 // import logoImg from '/assets/logo.jpg';
+import Button from "./UI/Button"
 
 export default function Navbar(){
     return (
@@ -8,7 +9,7 @@ export default function Navbar(){
                 <h1>Foodeee</h1>
             </div>
             <div>
-                <button>Cart (0)</button>
+                <Button textOnly>Cart (0)</Button>
             </div>
         </nav>
     )
